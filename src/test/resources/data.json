@@ -1,0 +1,20 @@
+[
+  {
+    "phoneNumber": "380991001001",
+    "userName": "jsonUser",
+    "password": "pass123",
+    "emails": [
+      "json@test.com",
+      "json1@test.com"
+    ]
+  },
+  {
+    "phoneNumber": "380991001002",
+    "userName": "jsonUser2",
+    "password": "pass1234",
+    "emails": [
+      "json2@test.com",
+      "json22@test.com"
+    ]
+  }
+]
