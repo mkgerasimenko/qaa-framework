@@ -1,0 +1,24 @@
+group 'com.github.emilshina'
+version '0.0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile ('org.testng:testng:6.12')
+}
+
+task wrapper (type: Wrapper){
+    gradleVersion = '4.2.1'
+}
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/smoke-suite.xml'
+    }
+}
