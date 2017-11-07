@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite">
+    <test name="Chrome group">
+        <classes>
+            <class name="com.github.emilshina.testcases.AuthorizationTests">
+                <methods>
+                    <include name="userShouldBeAuthorizedWithValidCredentials"/>
+                    <include name="userShouldNotBeAuthorizedWithInvalidLogin"/>
+                    <include name="userShouldNotBeAuthorizedWithInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="com.github.emilshina.testcases.MenuTests"/>
+        </classes>
+    </test>
+</suite>
